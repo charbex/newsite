@@ -2,7 +2,8 @@ const { json } = require("body-parser");
 const { response } = require("express");
 
 function getallstudents(){
-fetch('http://localhost:3000/getallstudents')
+//fetch('http://localhost:3000/getallstudents')
+fetch('https://test-wm7v.onrender.com/getallstudents')
 .then(response=>response.json())
 .then(json=>{
     let studentsul=document.getElementById('students');
